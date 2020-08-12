@@ -29,9 +29,40 @@ video::-webkit-media-controls-fullscreen-button {
 
 .inbox {
     height: 80vh;
+    overflow-y: auto;
 }
 
 .message-form {
     height: 10vh;
     width: 100%;
+}
+
+.incoming__message {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+}
+
+.outgoing__message {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+.sent__message {
+    width: 80%;
+    background-color: lightgreen;
+    margin: 2%;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.received__message {
+    width: 80%;
+    background-color: aqua;
+    margin: 2%;
+    border-radius: 5px;
+    padding: 3px;
 }
