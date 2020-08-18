@@ -33,23 +33,27 @@ const addNewMessage = ({ user, message }) => {
 
     const receivedMsg = `
   <div class="incoming__message">
+  <div class='message-container'>
     <div class="received__message">
       <p>${message}</p>
-      <div class="message__info">
+    </div>
+    <div class="message__info received-info">
         <span class="message__author">${user}</span>
         <span class="time_date">${formattedTime}</span>
       </div>
-    </div>
+      </div>
   </div>`;
 
     const myMsg = `
   <div class="outgoing__message">
+    <div class='message-container'>
     <div class="sent__message">
       <p>${message}</p>
-      <div class="message__info">
+    </div>
+    <div class="message__info sent-info">
         <span class="time_date">${formattedTime}</span>
       </div>
-    </div>
+      </div>
   </div>`;
 
     messageBox.innerHTML += user === userName ? myMsg : receivedMsg;
