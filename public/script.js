@@ -1,9 +1,9 @@
 const socket = io();
 
-const inboxPeople = document.querySelector(".inbox__people");
-const inputField = document.querySelector(".message_form__input");
-const messageForm = document.querySelector(".message_form");
-const messageBox = document.querySelector(".messages__history");
+const inboxPeople = document.querySelector(".inbox-people");
+const inputField = document.querySelector(".message-form-input");
+const messageForm = document.querySelector(".message-form");
+const messageBox = document.querySelector(".messages-history");
 const fallback = document.querySelector(".fallback");
 
 let userName = "";
@@ -20,7 +20,7 @@ const addToUsersBox = (userName) => {
     }
 
     const userBox = `
-    <div class="chat_ib ${userName}-userlist">
+    <div class="chat-ib ${userName}-userlist">
       <h5>${userName}</h5>
     </div>
   `;
@@ -32,26 +32,26 @@ const addNewMessage = ({ user, message }) => {
     const formattedTime = time.toLocaleString("en-US", { hour: "numeric", minute: "numeric" });
 
     const receivedMsg = `
-  <div class="incoming__message">
+  <div class="incoming-message">
   <div class='message-container'>
-    <div class="received__message">
+    <div class="received-message">
       <p>${message}</p>
     </div>
-    <div class="message__info received-info">
-        <span class="message__author">${user}</span>
-        <span class="time_date">${formattedTime}</span>
+    <div class="message-info received-info">
+        <span class="message-author">${user}</span>
+        <span class="time-date">${formattedTime}</span>
       </div>
       </div>
   </div>`;
 
     const myMsg = `
-  <div class="outgoing__message">
+  <div class="outgoing-message">
     <div class='message-container'>
-    <div class="sent__message">
+    <div class="sent-message">
       <p>${message}</p>
     </div>
-    <div class="message__info sent-info">
-        <span class="time_date">${formattedTime}</span>
+    <div class="message-info sent-info">
+        <span class="time-date">${formattedTime}</span>
       </div>
       </div>
   </div>`;

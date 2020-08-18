@@ -39,13 +39,13 @@ video::-webkit-media-controls-fullscreen-button {
     width: 100%;
 }
 
-.incoming__message {
+.incoming-message {
     width: 100%;
     display: flex;
     justify-content: flex-start;
 }
 
-.outgoing__message {
+.outgoing-message {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -57,7 +57,7 @@ video::-webkit-media-controls-fullscreen-button {
     flex-direction: column;
 }
 
-.sent__message {
+.sent-message {
     /* max-width: 80%; */
     overflow-wrap: break-word;
     background-color: #3B86BF;
@@ -67,7 +67,7 @@ video::-webkit-media-controls-fullscreen-button {
     padding: 15px;
 }
 
-.received__message {
+.received-message {
     /* max-width: 80%; */
     overflow-wrap: break-word;
     background-color: #333333;
@@ -77,7 +77,7 @@ video::-webkit-media-controls-fullscreen-button {
     padding: 15px;
 }
 
-.message__info {
+.message-info {
     color: #F7F7F7;
     font-size: .8em;
     margin: 0 15px;
